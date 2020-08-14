@@ -10,10 +10,17 @@ class CoursesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_courses)
         var courseList = listOf<Course>(
-            Course("1", "Python", "PY 101", "James Neumann", "Python Intro"),
-            Course("2", "Android", "AND 201", "Anne Elson", "Android development training"),
-            Course("3", "Database", "DB 304", "Kamwe Wema", "Database administration and development"),
-            Course("4", "Network", "DIS 202", "Betty Crocker", "Netwok Config for modern apps")
+            Var courses listOf{
+                courses("6677888888888","Monicah Nyokabi","Python","5647","Best course")
+                courses("6643568888","Stella Jerop","BootStrap","5453","Medium course")
+                courses("6677548968","Nicole Lorna","PHp","5667","Worst course")
+                courses("665467778888","Jann Wanjiru","Java","5677","Best course")
+                courses("6677888888888","Cherryl Akinyi","Python","5547","Best course")
+                courses("6677888888888","Hannah Cherriot","Python","5647","Best course")
+                courses("6677888888888","Bastard Owino","5687","Best course")
+                courses("667787778888","Hellen Evans","C++","5697","Best course")
+                courses("6677888332211","Gitongo Mwonae","Enterprenuership","5327","Best course")
+                courses("667788666688","Purity Nganga","Javascript","907","Best course")
         )
         rvCourses.layoutManager = LinearLayoutManager(baseContext)
         rvCourses.adapter = CoursesAdapter(courseList)
